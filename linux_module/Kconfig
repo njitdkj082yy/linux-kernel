@@ -4,11 +4,11 @@
 menu "TEST Driver"
 comment "TEST Driver"
 
-config TEST
+config TEST_KOBJ
 	tristate "TEST support"
 	
-config TEST_USER
+config TEST_KSET
 	tristate "TEST user-space interface"
-	depends on TEST
+	
 endmenu
 

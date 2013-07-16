@@ -1,0 +1,42 @@
+# cd /data
+# insmod kset.ko
+[17974.830000] kset test init.
+[17974.830000] Filter:kobj kset_c.
+[17974.840000] Name:kobj kset_c.
+[17974.840000] uevent:kobj kset_c.
+[17974.850000] ACTION=add.
+[17974.850000] DEVPATH=/kset_p/kset_c.
+[17974.850000] SUBSYSTEM=kset_name.
+# cd /sys
+# ls -l
+drwxr-xr-x root     root              2013-07-14 07:43 fs
+drwxr-xr-x root     root              2013-07-14 02:45 devices
+drwxr-xr-x root     root              2013-07-14 07:43 dev
+drwxr-xr-x root     root              2013-07-14 07:43 bus
+drwxr-xr-x root     root              2013-07-14 07:41 class
+drwxr-xr-x root     root              2013-07-14 07:43 firmware
+drwxr-xr-x root     root              2013-07-14 07:43 kernel
+drwxr-xr-x root     root              2013-07-14 02:45 power
+drwxr-xr-x root     root              2013-07-14 07:45 module
+drwxr-xr-x root     root              2013-07-14 07:43 block
+drwxr-xr-x root     root              2013-07-14 07:45 kset_p
+# cd kset_p
+# ls -l
+drwxr-xr-x root     root              2013-07-14 07:45 kset_c
+# cd kset_c
+# ls -l
+# lsmod
+kset 1290 0 - Live 0xbf0c0000
+hippo_gc0309 7030 0 - Live 0xbf06b000 (P)
+hippo_ov3640 7834 0 - Live 0xbf064000 (P)
+dhd 186161 0 - Live 0xbf027000
+# [18002.690000] Voltage: 3796 :im98xx_battery_work_func
+[18002.690000] Level:   53  :im98xx_battery_work_func
+rmmod kset
+[18006.690000] kset test exit.
+[18006.700000] Filter:kobj kset_c.
+[18006.700000] Name:kobj kset_c.
+[18006.700000] uevent:kobj kset_c.
+[18006.710000] ACTION=remove.
+[18006.710000] DEVPATH=/kset_p/kset_c.
+[18006.710000] SUBSYSTEM=kset_name.
