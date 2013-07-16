@@ -116,3 +116,4 @@ obj-y                           += vir_ser/
 obj-y				+= im98xxdma/
 obj-y				+= im98xxprofile/
 obj-y				+= nvm/
+obj-y		+= yy-test/
