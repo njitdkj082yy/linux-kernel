@@ -1,0 +1,61 @@
+cd /sys
+# ls
+fs
+devices
+dev
+bus
+class
+firmware
+kernel
+power
+module
+block
+kobject_test
+# ls -l kobject_test
+-rwxrwxrwx root     root         4096 2013-07-14 04:56 kobj_config1
+-rwxrwxrwx root     root         4096 2013-07-14 04:56 kobj_config2
+# [ 7862.620000] Voltage: 3784 :im98xx_battery_work_func
+[ 7862.620000] Level:   51  :im98xx_battery_work_func
+cd kobject_test
+# ls
+kobj_config1
+kobj_config2
+# cat kobj_config1
+[ 7877.720000] have show
+[ 7877.730000] attrname:kobj_config1
+kobj_config1
+# cat kobj_config2
+[ 7885.790000] have show
+[ 7885.800000] attrname:kobj_config2
+kobj_config2
+# echo "11111" > ko[ 7896.530000] have store
+bj_config1
+[ 7896.530000] write:11111
+[ 7896.530000] 
+# echo "22222" > ko[ 7919.840000] have store
+bj_config2
+[ 7919.840000] write:22222
+[ 7919.840000] 
+# [ 7922.620000] Voltage: 3788 :im98xx_battery_work_func
+[ 7922.620000] Level:   51  :im98xx_battery_work_func
+rmmod kobject
+[ 7936.230000] kobj test exit
+# cd /data
+# insmod kobject.ko
+[ 7962.240000] kobj test init
+[ 7962.240000] kobj->state_initialized=0
+[ 7962.250000] kobj->state_in_sysfs=0
+[ 7962.250000] kobj->state_add_uevent_sent=0
+[ 7962.250000] kobj->uevent_suppress=0
+[ 7962.260000] kobj->name = <NULL>
+[ 7962.260000] 
+[ 7962.260000] 
+[ 7962.260000] *******************************
+[ 7962.260000] 
+[ 7962.270000] kobj->state_initialized=1
+[ 7962.270000] kobj->state_in_sysfs=0
+[ 7962.280000] kobj->state_add_uevent_sent=0
+[ 7962.280000] kobj->uevent_suppress=0
+[ 7962.280000] kobj->name = kobject_test
+# rmmod kobject
+[ 7970.110000] kobj test exit
