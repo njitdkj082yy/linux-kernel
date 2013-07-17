@@ -1,0 +1,108 @@
+cd /data
+# insmod kset.ko
+[   64.400000] 
+[   64.400000] kobj->kset initialized
+[   64.410000] parent == null
+[   64.410000] 
+[   64.410000] kobj->refcount=107
+[   64.420000] 
+[   64.420000] create_dir over--->error=0
+[   64.420000] 
+[   64.420000] create_dir over--->error=0
+[   64.430000] 
+[   64.430000] create_dir over--->error=0
+[   64.440000] kset test init.
+[   64.440000] 
+[   64.440000] create_dir over--->error=0
+[   64.440000] 
+[   64.440000] 
+[   64.440000] kobject_add_internal over ---->error=0
+[   64.450000] kobj->state_initialized=1
+[   64.460000] kobj->state_in_sysfs=1
+[   64.460000] kobj->state_add_uevent_sent=0
+[   64.460000] kobj->state_remove_uevent_sent=0
+[   64.470000] kobj->uevent_suppress=0
+[   64.470000] 
+[   64.470000] top_kobj->kset == null
+[   64.480000] kobj->state_initialized=1
+[   64.480000] kobj->state_in_sysfs=1
+[   64.480000] kobj->state_add_uevent_sent=0
+[   64.490000] kobj->state_remove_uevent_sent=0
+[   64.490000] kobj->uevent_suppress=0
+[   64.500000] 
+[   64.500000] kobj->kset initialized
+[   64.500000] parent == null
+[   64.500000] 
+[   64.500000] kobj->refcount=3
+[   64.510000] 
+[   64.510000] create_dir over--->error=0
+[   64.510000] 
+[   64.510000] 
+[   64.510000] kobject_add_internal over ---->error=0
+[   64.520000] kobj->state_initialized=1
+[   64.520000] kobj->state_in_sysfs=1
+[   64.530000] kobj->state_add_uevent_sent=0
+[   64.530000] kobj->state_remove_uevent_sent=0
+[   64.540000] kobj->uevent_suppress=0
+[   64.540000] Filter:kobj kset_c.
+[   64.540000] Name:kobj kset_c.
+[   64.550000] buf=kset_name
+[   64.550000] uevent:kobj kset_c.
+[   64.550000] ACTION=add.
+[   64.550000] DEVPATH=/kset_p/kset_c.
+[   64.560000] SUBSYSTEM=kset_name.
+[   64.560000] 
+[   64.560000] kobj->kset initialized
+[   64.570000] 
+[   64.570000] kobj->refcount=5
+[   64.570000] 
+[   64.570000] create_dir over--->error=0
+[   64.580000] kobj->ueven1
+[   64.580000] 
+[   64.580000] kobj->kset initialized
+[   64.590000] 
+[   64.590000] kobj->refcount=6
+[   64.590000] 
+[   64.590000] create_dir over--->error=0
+[   64.600000] kobj->ueven2
+[   64.600000] 
+[   64.600000] kobj->kset initialized
+[   64.600000] 
+[   64.600000] kobj->refcount=7
+[   64.610000] 
+[   64.610000] create_dir over--->error=0
+[   64.610000] kobj->ueven3
+[   64.620000] 
+[   64.620000] kobj->kset initialized
+[   64.620000] 
+[   64.620000] kobj->refcount=8
+[   64.630000] 
+[   64.630000] create_dir over--->error=0
+[   64.630000] kobj->ueven4
+[   64.640000] kobj->name=kset_p  kobj->refcount=8
+[   64.640000] kobj->name=kset_c  kobj->refcount=1
+[   64.640000] kobj->name=kobject_1  kobj->refcount=2
+[   64.650000] kobj->name=kobject_2  kobj->refcount=2
+[   64.660000] kobj->name=kobject_3  kobj->refcount=2
+[   64.660000] kobj->name=kobject_4  kobj->refcount=1
+# [   64.990000] Voltage: 3810 :im98xx_battery_work_func
+[   64.990000] Level:   55  :im98xx_battery_work_func
+
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# rmmod kset
+[   68.640000] kset test exit.
+[   68.650000] Filter:kobj kset_c.
+[   68.650000] Name:kobj kset_c.
+[   68.650000] buf=kset_name
+[   68.660000] uevent:kobj kset_c.
+[   68.660000] ACTION=remove.
+[   68.660000] DEVPATH=/kset_p/kset_c.
+[   68.670000] SUBSYSTEM=kset_name.
