@@ -1,0 +1,125 @@
+# cd /data
+# ls
+bus_basic.ko
+main.ko
+silent_mode
+backup
+volsetting
+kset.ko
+simmode1
+asound.conf
+infomax_blcr_first_boot
+blcr.id
+data_ps_debug_ddr.txt
+flag_ps_debug_ddr.txt
+psreboot_pin
+psreboot_flag
+initcallvolume
+smscoding
+imei.txt
+machine_data.txt
+simmode2
+nvm_params.txt
+nvm_log.txt
+dalvik-cache
+system
+kobject.ko
+property
+app
+app-private
+data
+local
+misc
+dontpanic
+lost+found
+# insmod bus_basic.ko
+[  709.780000] 
+[  709.780000] kobj->kset initialized
+[  709.790000] parent == null
+[  709.790000] 
+[  709.790000] kobj->refcount=107
+[  709.790000] 
+[  709.790000] create_dir over--->error=0
+[  709.800000] 
+[  709.800000] create_dir over--->error=0
+[  709.810000] 
+[  709.810000] create_dir over--->error=0
+[  709.810000] 
+[  709.810000] kobj->kset initialized
+[  709.820000] parent == null
+[  709.820000] 
+[  709.820000] kobj->refcount=15
+[  709.830000] 
+[  709.830000] create_dir over--->error=0
+[  709.830000] 
+[  709.830000] 
+[  709.830000] kobject_add_internal over ---->error=0
+[  709.840000] kobj->state_initialized=1
+[  709.840000] kobj->state_in_sysfs=1
+[  709.850000] kobj->state_add_uevent_sent=0
+[  709.850000] kobj->state_remove_uevent_sent=0
+[  709.860000] kobj->uevent_suppress=0
+[  709.860000] 
+[  709.860000] create_dir over--->error=0
+[  709.870000] 
+[  709.870000] 
+[  709.870000] kobject_add_internal over ---->error=0
+[  709.870000] kobj->state_initialized=1
+[  709.880000] kobj->state_in_sysfs=1
+[  709.880000] kobj->state_add_uevent_sent=0
+[  709.890000] kobj->state_remove_uevent_sent=0
+[  709.890000] kobj->uevent_suppress=0
+[  709.890000] 
+[  709.890000] create_dir over--->error=0
+[  709.900000] 
+[  709.900000] 
+[  709.900000] kobject_add_internal over ---->error=0
+[  709.910000] kobj->state_initialized=1
+[  709.910000] kobj->state_in_sysfs=1
+[  709.910000] kobj->state_add_uevent_sent=0
+[  709.920000] kobj->state_remove_uevent_sent=0
+[  709.920000] kobj->uevent_suppress=0
+# 
+# 
+# cd /sys
+# ls -l 
+drwxr-xr-x root     root              2013-07-15 14:57 fs
+drwxr-xr-x root     root              2013-07-15 14:45 devices
+drwxr-xr-x root     root              2013-07-15 14:57 dev
+drwxr-xr-x root     root              2013-07-15 14:57 bus
+drwxr-xr-x root     root              2013-07-15 14:56 class
+drwxr-xr-x root     root              2013-07-15 14:57 firmware
+drwxr-xr-x root     root              2013-07-15 14:57 kernel
+drwxr-xr-x root     root              2013-07-15 14:45 power
+drwxr-xr-x root     root              2013-07-15 14:57 module
+drwxr-xr-x root     root              2013-07-15 14:57 block
+# cd bus
+# [  724.670000] Voltage: 3802 :im98xx_battery_work_func
+[  724.670000] Level:   53  :im98xx_battery_work_func
+ls -l
+drwxr-xr-x root     root              2013-07-15 14:57 platform
+drwxr-xr-x root     root              2013-07-15 14:57 i2c
+drwxr-xr-x root     root              2013-07-15 14:57 scsi
+drwxr-xr-x root     root              2013-07-15 14:57 mmc
+drwxr-xr-x root     root              2013-07-15 14:57 sdio
+drwxr-xr-x root     root              2013-07-15 14:57 hid
+drwxr-xr-x root     root              2013-07-15 14:57 yy
+# cd yy
+# ls
+uevent
+devices
+drivers
+drivers_probe
+drivers_autoprobe
+version
+# ls -l
+--w------- root     root         4096 2013-07-15 14:57 uevent
+drwxr-xr-x root     root              2013-07-15 14:57 devices
+drwxr-xr-x root     root              2013-07-15 14:57 drivers
+--w------- root     root         4096 2013-07-15 14:57 drivers_probe
+-rw-r--r-- root     root         4096 2013-07-15 14:57 drivers_autoprobe
+-r--r--r-- root     root         4096 2013-07-15 14:57 version
+# cat version
+$Revision:1.0$
+# ls -l devices
+# ls -l drivers

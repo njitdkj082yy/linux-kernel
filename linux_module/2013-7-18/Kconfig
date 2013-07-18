@@ -1,0 +1,17 @@
+#
+# TEST driver  configuration
+#
+menu "TEST Driver"
+comment "TEST Driver"
+
+config TEST_KOBJ
+	tristate "TEST_KOBJ"
+	
+config TEST_KSET
+	tristate "TEST_KSET"
+	
+config TEST_BUS_BASIC
+	tristate "TEST_BUS_BASIC"
+	
+endmenu
+
